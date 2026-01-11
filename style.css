@@ -1,0 +1,153 @@
+/* === Global Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #1f2933;
+  line-height: 1.7;
+}
+
+/* === Header === */
+header {
+  background-color: #0b3c6f; /* Trusted blue */
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+.header-line {
+  width: 90px;
+  height: 3px;
+  background: #4fa3e3; /* Lighter accent blue */
+  margin: 12px auto;
+}
+
+.service-tags {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #e0f2ff;
+}
+
+/* === Navigation === */
+nav {
+  background: #082f54;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 18px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #4fa3e3;
+}
+
+/* === Section / Cards === */
+section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  margin-bottom: 16px;
+  color: #082f54;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+.card {
+  background: #f1f7fd;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-left: 5px solid #4fa3e3;
+  border-radius: 4px;
+}
+
+/* === Call-to-Action Buttons === */
+.cta a {
+  display: inline-block;
+  margin-right: 12px;
+  padding: 12px 26px;
+  background: #0b3c6f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.cta a:hover {
+  background: #082f54;
+}
+
+/* === Footer === */
+footer {
+  background: #082f54;
+  color: #e0f2ff;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+}
+
+footer a {
+  color: #4fa3e3;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+/* === Form === */
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+form button {
+  padding: 12px 30px;
+  background: #0b3c6f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #082f54;
+}
+
+/* === WhatsApp Button === */
+.btn-outline {
+  display: inline-block;
+  margin-left: 12px;
+  padding: 12px 26px;
+  background: #25D366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.btn-outline:hover {
+  background: #1ebe5a;
+}

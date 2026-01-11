@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us — VAYU</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>VAYU</h1>
+  <div class="header-line"></div>
+  <div class="service-tags">Let’s Start a Conversation</div>
+</header>
+
+<nav>
+  <a href="index.html">HOME</a>
+  <a href="about.html">ABOUT US</a>
+  <a href="services.html">SERVICES</a>
+  <a href="contact.html">CONTACT US</a>
+</nav>
+
+<section>
+  <h2>Contact Us</h2>
+  <p>For confidential enquiries or consultation, please use the form below or reach out via WhatsApp.</p>
+
+  <form id="contactForm" class="contact-form" method="post" action="https://formspree.io/f/xkoowall">
+    <input type="hidden" name="_subject" value="New Contact Enquiry — VAYU">
+
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text" required>
+
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
+
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <a class="btn btn-outline" href="https://wa.me/351962797632" target="_blank">💬 WhatsApp</a>
+    </div>
+  </form>
+</section>
+
+<footer>
+  <p>© VAYU | Confidential • Professional • Reliable</p>
+</footer>
+
+</body>
+</html>
