@@ -1,52 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact Us — VAYU</title>
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Us — VAYU</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-name">VAYU</div>
+        <div class="brand-line" aria-hidden="true"></div>
+        <nav class="brand-services" aria-label="Core services">
+          <span>Consulting</span>
+          <span class="separator">|</span>
+          <span>Outsourcing</span>
+          <span class="separator">|</span>
+          <span>Technologies</span>
+        </nav>
+      </div>
 
-<header>
-  <h1>VAYU</h1>
-  <div class="header-line"></div>
-  <div class="service-tags">Let’s Start a Conversation</div>
-</header>
-
-<nav>
-  <a href="index.html">HOME</a>
-  <a href="about.html">ABOUT US</a>
-  <a href="services.html">SERVICES</a>
-  <a href="contact.html">CONTACT US</a>
-</nav>
-
-<section>
-  <h2>Contact Us</h2>
-  <p>For confidential enquiries or consultation, please use the form below or reach out via WhatsApp.</p>
-
-  <form id="contactForm" class="contact-form" method="post" action="https://formspree.io/f/xkoowall">
-    <input type="hidden" name="_subject" value="New Contact Enquiry — VAYU">
-
-    <label for="name">Name</label>
-    <input id="name" name="name" type="text" required>
-
-    <label for="email">Email</label>
-    <input id="email" name="email" type="email" required>
-
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="6" required></textarea>
-
-    <div class="form-actions">
-      <button type="submit" class="btn btn-primary">Send Message</button>
-      <a class="btn btn-outline" href="https://wa.me/351962797632" target="_blank">💬 WhatsApp</a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="about.html" class="nav-link">ABOUT US</a>
+        <a href="services.html" class="nav-link">SERVICES</a>
+        <a href="contact.html" class="nav-link active">CONTACT US</a>
+      </nav>
     </div>
-  </form>
-</section>
+  </header>
 
-<footer>
-  <p>© VAYU | Confidential • Professional • Reliable</p>
-</footer>
+  <main>
+    <section class="page container">
+      <h1>Contact Us</h1>
+      <p>For confidential enquiries or to arrange a consultation please use the form below or reach out via WhatsApp.</p>
 
+      <form id="contactForm" class="contact-form" method="post" action="https://formspree.io/f/xkoowall">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <a class="btn btn-outline" href="https://wa.me/351962797632?text=Hello%20VAYU%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <!-- simple WhatsApp SVG icon -->
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+              <path d="M20.5 3.5A11 11 0 1 0 12.03 22L7 20l1.6-4.5A8.5 8.5 0 1 1 20.5 3.5z" fill="#fff" opacity="0.06"/>
+              <path d="M17.1 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.2-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.1-1.2-.4-2.3-1.4-.9-.9-1.4-2-1.4-2.3 0-.3.1-.5.1-.7.1-.3-.1-.6-.1-.9-.1-.3-.7-.9-1-.9s-1.2.4-1.6.9a6 6 0 0 0 0 6.6c.9 1.4 2.6 2.9 4.6 3.4 1.6.4 2.7.4 3.4.4.5 0 1-.3 1.2-.6.3-.3 1-1.1 1.2-1.9.2-.9.2-1.7.1-1.9-.1-.4-.3-.5-.6-.6z" fill="#25D366"/>
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
+
+      <p class="muted">We respond to consultation enquiries promptly. Your message is handled confidentially.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="footer-brand">VAYU</div>
+        <p class="trust">Trusted. Strategic. Global.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
